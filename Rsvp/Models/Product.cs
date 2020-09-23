@@ -5,12 +5,12 @@ using System.Text.Json.Serialization;
 
 namespace Rsvp.Models
 {
-    public class GuestResponse
+    public class Product
     {
         public long Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public bool? WillAttend { get; set; }
+        public string Category { get; set; }
+        public decimal PurchasePrice { get; set; }
+        public decimal RetailPrice { get; set; }
     }
 }
