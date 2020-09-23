@@ -7,19 +7,8 @@ ls
 select name from sys.databases;
 go
 
+dotnet ef database drop --force
+dotnet ef database update
+
 create database efCoreDB;
 go
-
-use efCoreDB
-go
-
-create table test(id INT, name NVARCHAR(50), email NVARCHAR(50))
-go
-
-insert into test values(1, 'Bill Gates', 'bill.gates@microsoft.com')
-go
-
-insert into test values(2, 'John Smith', 'john.smith@gmail.com')
-go
-
-insert into Users values('admin', 'admin@bitwork.com', '4f365efeb48b53e5ae7243987114528856a39b075b34a88b9946c5069a6cc096')

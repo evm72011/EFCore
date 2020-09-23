@@ -8,6 +8,7 @@ namespace Rsvp.Models
 {
     public class DataContext: DbContext
     {
+        public DbSet<GuestResponse> GuestResponses { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
             optionsBuilder.UseSqlServer(@"Server=localhost;Database=efCoreDB; User Id=SA; Password=My_super_secret_password");
